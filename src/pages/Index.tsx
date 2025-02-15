@@ -64,10 +64,10 @@ const Index = () => {
             className="mx-auto mb-8 w-40 md:w-64 animate-float"
           />
           <h1 className="text-3xl md:text-6xl font-bold text-primary tracking-tight leading-tight">
-            Transform Your<br className="md:hidden" /> Tailoring Business
+            The #1 Tailor-as-a-Service Platform
           </h1>
           <p className="text-lg md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Join the future of bespoke tailoring. Streamline your workflow, enhance client experience, and grow your business.
+            Connect with Expert Tailors Worldwide. Experience bespoke tailoring without boundaries.
           </p>
           <Card className="max-w-md mx-auto p-6 shadow-lg bg-white/80 backdrop-blur">
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -107,18 +107,18 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <Card className="p-6 hover:shadow-lg transition-all duration-300 bg-white/80 backdrop-blur">
               <Zap className="w-12 h-12 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Streamlined Operations</h3>
-              <p className="text-gray-600">Automate measurements, orders, and client management</p>
+              <h3 className="text-xl font-semibold mb-2">Global Network</h3>
+              <p className="text-gray-600">Access expert tailors from around the world, anytime</p>
             </Card>
             <Card className="p-6 hover:shadow-lg transition-all duration-300 bg-white/80 backdrop-blur">
               <Users className="w-12 h-12 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Enhanced Client Experience</h3>
-              <p className="text-gray-600">Provide a premium digital experience for your clients</p>
+              <h3 className="text-xl font-semibold mb-2">Seamless Connection</h3>
+              <p className="text-gray-600">Connect with the perfect tailor for your specific needs</p>
             </Card>
             <Card className="p-6 hover:shadow-lg transition-all duration-300 bg-white/80 backdrop-blur">
               <Star className="w-12 h-12 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Business Growth</h3>
-              <p className="text-gray-600">Expand your reach and increase your revenue</p>
+              <h3 className="text-xl font-semibold mb-2">Premium Service</h3>
+              <p className="text-gray-600">Experience world-class tailoring and craftsmanship</p>
             </Card>
           </div>
         </div>
@@ -132,11 +132,11 @@ const Index = () => {
           </h2>
           <div className="space-y-3">
             {[
-              "Digital measurement records and client profiles",
-              "Automated order tracking and management",
-              "Seamless client communication",
-              "Advanced analytics and reporting",
-              "Mobile-friendly interface",
+              "Access to global network of expert tailors",
+              "Real-time communication and collaboration",
+              "Secure payment and project management",
+              "Quality assurance and satisfaction guarantee",
+              "Advanced measurement and fitting technology",
             ].map((benefit, index) => (
               <div key={index} className="flex items-center space-x-4 p-4 rounded-lg hover:bg-white/50 transition-colors">
                 <Check className="w-5 h-5 text-accent flex-shrink-0" />
@@ -151,10 +151,10 @@ const Index = () => {
       <section className="bg-accent text-white py-16 md:py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-6">
-            Be Among the First to Experience Sticha
+            Join the Future of Global Tailoring
           </h2>
           <p className="text-lg md:text-xl mb-8 opacity-90">
-            Join our exclusive waitlist and get early access to the future of tailoring.
+            Be among the first to experience the world's leading Tailor-as-a-Service platform.
           </p>
           <Card className="max-w-md mx-auto p-6 bg-white/10 backdrop-blur">
             <form onSubmit={handleSubmit} className="space-y-4">
