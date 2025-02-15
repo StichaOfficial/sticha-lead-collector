@@ -34,6 +34,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 pt-20 pb-32 text-center">
         <div className="space-y-6 animate-fadeIn">
+          <img 
+            src="/lovable-uploads/448467b8-6c7f-42c5-9c32-c284b08e7da9.png" 
+            alt="Sticha - Tailors, on demand." 
+            className="mx-auto mb-8 max-w-md w-full"
+          />
           <h1 className="text-4xl md:text-6xl font-bold text-primary tracking-tight">
             Transform Your Tailoring Business
           </h1>
