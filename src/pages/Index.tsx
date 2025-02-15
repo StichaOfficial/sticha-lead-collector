@@ -7,13 +7,15 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Check, Star, Users, Zap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 
 const Index = () => {
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) {
       toast({
@@ -23,13 +25,31 @@ const Index = () => {
       });
       return;
     }
-    // Here you would integrate with your email service
-    toast({
-      title: "Success!",
-      description: "Thank you for joining our waitlist!",
-    });
-    setEmail("");
-    navigate("/thank-you");
+
+    setIsSubmitting(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('subscribe-to-ac', {
+        body: { email },
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Success!",
+        description: "Thank you for joining our waitlist!",
+      });
+      setEmail("");
+      navigate("/thank-you");
+    } catch (error) {
+      console.error('Error subscribing to newsletter:', error);
+      toast({
+        title: "Error",
+        description: "Failed to join waitlist. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -55,9 +75,14 @@ const Index = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="h-12 text-lg"
+              disabled={isSubmitting}
             />
-            <Button type="submit" className="w-full h-12 text-lg bg-accent hover:bg-accent/90">
-              Join the Waitlist
+            <Button 
+              type="submit" 
+              className="w-full h-12 text-lg bg-accent hover:bg-accent/90"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Joining..." : "Join the Waitlist"}
             </Button>
           </form>
         </div>
@@ -125,9 +150,14 @@ const Index = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="h-12 text-lg bg-white/90"
+              disabled={isSubmitting}
             />
-            <Button type="submit" className="w-full h-12 text-lg bg-white text-accent hover:bg-white/90">
-              Join the Waitlist
+            <Button 
+              type="submit" 
+              className="w-full h-12 text-lg bg-white text-accent hover:bg-white/90"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Joining..." : "Join the Waitlist"}
             </Button>
           </form>
         </div>
