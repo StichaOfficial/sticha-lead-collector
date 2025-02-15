@@ -64,7 +64,7 @@ const Index = () => {
             className="mx-auto mb-8 w-40 md:w-64 animate-float"
           />
           <h1 className="text-3xl md:text-6xl font-bold text-primary tracking-tight leading-tight">
-            The #1 Tailors-as-a-Service Platform
+            The #1 Tailor-as-a-Service Platform
           </h1>
           <p className="text-lg md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Connect with Expert Tailors Worldwide. Experience bespoke tailoring without boundaries.
