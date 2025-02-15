@@ -10,7 +10,7 @@ const ThankYou = () => {
         <img 
           src="/lovable-uploads/448467b8-6c7f-42c5-9c32-c284b08e7da9.png" 
           alt="Sticha - Tailors, on demand." 
-          className="mx-auto mb-12 max-w-xs w-full"
+          className="mx-auto mb-12 w-32 md:w-48"
         />
         <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
           Thank You for Joining!

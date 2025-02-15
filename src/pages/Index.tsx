@@ -40,7 +40,7 @@ const Index = () => {
           <img 
             src="/lovable-uploads/448467b8-6c7f-42c5-9c32-c284b08e7da9.png" 
             alt="Sticha - Tailors, on demand." 
-            className="mx-auto mb-8 max-w-md w-full"
+            className="mx-auto mb-8 w-48 md:w-64"
           />
           <h1 className="text-4xl md:text-6xl font-bold text-primary tracking-tight">
             Transform Your Tailoring Business
