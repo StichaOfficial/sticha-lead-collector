@@ -87,12 +87,12 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <section className="container mx-auto px-4 py-12">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
             Why Choose Sticha?
           </h2>
-          <div className="space-y-6">
+          <div className="space-y-3">
             {[
               "Digital measurement records and client profiles",
               "Automated order tracking and management",
@@ -100,9 +100,9 @@ const Index = () => {
               "Advanced analytics and reporting",
               "Mobile-friendly interface",
             ].map((benefit, index) => (
-              <div key={index} className="flex items-center space-x-4 p-4 rounded-lg hover:bg-secondary transition-colors">
-                <Check className="w-6 h-6 text-accent flex-shrink-0" />
-                <span className="text-lg text-gray-700">{benefit}</span>
+              <div key={index} className="flex items-center space-x-4 p-3 rounded-lg hover:bg-secondary transition-colors">
+                <Check className="w-5 h-5 text-accent flex-shrink-0" />
+                <span className="text-base text-gray-700">{benefit}</span>
               </div>
             ))}
           </div>
