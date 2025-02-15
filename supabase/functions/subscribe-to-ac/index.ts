@@ -17,8 +17,8 @@ serve(async (req) => {
   }
 
   try {
-    const { email } = await req.json();
-    console.log('Attempting to subscribe email:', email);
+    const { email, name } = await req.json();
+    console.log('Attempting to subscribe:', { email, name });
     console.log('Using AC API URL:', AC_API_URL);
     console.log('List name:', AC_LIST_NAME);
 
@@ -32,6 +32,7 @@ serve(async (req) => {
       body: JSON.stringify({
         contact: {
           email: email,
+          firstName: name,
         },
       }),
     });
