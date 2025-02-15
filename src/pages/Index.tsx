@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
@@ -126,7 +125,7 @@ const Index = () => {
 
       {/* Benefits Section */}
       <section className="container mx-auto px-4 py-16 md:py-20">
-        <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-3xl mx-auto space-y-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
             Why Choose Sticha?
           </h2>
@@ -138,7 +137,7 @@ const Index = () => {
               "Quality assurance and satisfaction guarantee",
               "Advanced measurement and fitting technology",
             ].map((benefit, index) => (
-              <div key={index} className="flex items-center space-x-4 p-4 rounded-lg hover:bg-white/50 transition-colors">
+              <div key={index} className="flex items-center justify-center space-x-4 p-4 rounded-lg hover:bg-white/50 transition-colors">
                 <Check className="w-5 h-5 text-accent flex-shrink-0" />
                 <span className="text-base text-gray-700">{benefit}</span>
               </div>
