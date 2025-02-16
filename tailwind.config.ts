@@ -62,12 +62,22 @@ export default {
           from: { opacity: "0", transform: "translateY(20px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        typing: {
+          "0%": { width: "0", opacity: "0" },
+          "1%": { opacity: "1" },
+          "50%": { width: "100%" },
+          "55%": { width: "100%" },
+          "60%": { width: "0" },
+          "65%": { width: "0" },
+          "100%": { width: "0" }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         float: "float 6s ease-in-out infinite",
         fadeIn: "fadeIn 0.5s ease-out forwards",
+        typing: "typing 8s ease-in-out infinite",
       },
     },
   },
