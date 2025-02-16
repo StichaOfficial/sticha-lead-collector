@@ -63,10 +63,12 @@ const Index = () => {
             alt="Sticha - Tailors, on demand." 
             className="mx-auto mb-8 w-40 md:w-64 animate-float"
           />
-          <div className="overflow-hidden px-2">
-            <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold text-primary tracking-tight leading-tight animate-typing overflow-hidden border-r-4 border-primary">
-              The #1 Tailor-as-a-Service<br className="sm:hidden" /> Platform
-            </h1>
+          <div className="relative w-full overflow-hidden">
+            <div className="whitespace-nowrap inline-block animate-marquee">
+              <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold text-primary tracking-tight leading-tight">
+                The #1 Tailor-as-a-Service Platform
+              </h1>
+            </div>
           </div>
           <p className="text-lg md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Connect with Expert Tailors Worldwide. Experience bespoke tailoring without boundaries.
