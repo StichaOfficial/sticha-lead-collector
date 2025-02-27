@@ -66,7 +66,7 @@ const Index = () => {
           <div className="relative w-full overflow-hidden">
             <div className="whitespace-nowrap inline-block animate-marquee">
               <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold text-primary tracking-tight leading-tight">
-                The #1 Tailor-as-a-Service Platform
+                #1 Tailor-as-a-Service Platform
               </h1>
             </div>
           </div>
